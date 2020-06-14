@@ -255,9 +255,7 @@ int				check_line_is_num(char *str);
 void			separate_r(char **tab, t_cub3d *cub, t_check_struct *ret);
 
 void			turnright(t_cub3d *cub);
-void			turnright2(t_cub3d *cub);
 void			turnleft(t_cub3d *cub);
-void			turnleft2(t_cub3d *cub);
 
 void			save(t_cub3d *cub);
 
