@@ -6,7 +6,7 @@
 /*   By: lryst <lryst@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/13 23:44:59 by lryst             #+#    #+#             */
-/*   Updated: 2020/06/14 01:09:58 by lryst            ###   ########.fr       */
+/*   Updated: 2020/06/14 02:56:31 by lryst            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void					save(t_cub3d *cub)
 	unsigned char	*bmpinfoheader;
 
 	size = 54 + 4 * cub->width * cub->height;
-	file = open("screenshot/screenshot.bmp", O_WRONLY | O_CREAT |
+	file = open("screenshot.bmp", O_WRONLY | O_CREAT |
 											O_TRUNC, 0755);
 	bmpfileheader = ft_file_header(size);
 	write(file, bmpfileheader, 14);
